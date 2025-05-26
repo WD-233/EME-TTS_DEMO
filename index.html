@@ -1,125 +1,110 @@
-<!-- 保留初始模板的头部 -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>EME-TTS: Emotional Speech Synthesis Demo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/index.js"></script>
-</head>
-
-<body>
-
-<!-- 保留页面顶部 Hero 区 -->
+<!-- 保留原始 Academic Project Page 的顶部结构 -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
-      <h1 class="title is-1">EME-TTS: Emotional Speech Synthesis Demo</h1>
-      <p class="is-size-5">展示重音可控情感语音合成系统的表现</p>
+      <h1 class="title is-1 publication-title">Academic Project Page</h1>
+      <div class="is-size-5 publication-authors">
+        <span class="author-block"><a href="#">First Author</a><sup>*</sup>,</span>
+        <span class="author-block"><a href="#">Second Author</a><sup>*</sup>,</span>
+        <span class="author-block"><a href="#">Third Author</a></span>
+      </div>
+      <div class="is-size-5 publication-authors">
+        <span class="author-block">Institution Name<br>Conference name and year</span>
+        <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+      </div>
+      <div class="publication-links">
+        <span class="link-block">
+          <a href="#" class="external-link button is-normal is-rounded is-dark">
+            <span class="icon"><i class="fas fa-file-pdf"></i></span>
+            <span>Paper</span>
+          </a>
+        </span>
+        <span class="link-block">
+          <a href="#" class="external-link button is-normal is-rounded is-dark">
+            <span class="icon"><i class="ai ai-arxiv"></i></span>
+            <span>arXiv</span>
+          </a>
+        </span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Emphasis Accuracy -->
+<!-- Section 1: Emphasis Accuracy -->
 <section class="section">
-  <div class="container is-max-desktop">
+  <div class="container is-max-desktop has-text-centered">
     <h2 class="title is-3">1. Emphasis Accuracy</h2>
-    <p>
-      <!-- 你可以在这里补充 Emphasis Accuracy 的描述性文字 -->
-    </p>
+    <p> <!-- 留空位置供描述 --> </p>
 
-    <!-- 句子1 音频表格（2×5）-->
     <h3 class="title is-5">Sentence 1</h3>
-    <table class="table is-bordered is-striped is-fullwidth has-text-centered">
+    <table class="table is-bordered is-fullwidth">
       <thead>
         <tr>
-          <th>Model \ Emotion</th>
-          <th>Emotion 1</th>
-          <th>Emotion 2</th>
-          <th>Emotion 3</th>
-          <th>Emotion 4</th>
-          <th>Emotion 5</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
+          <th>Emotion \ Model</th>
           <th>Model A</th>
-          <td><audio controls src=""></audio></td>
-          <td><audio controls src=""></audio></td>
-          <td><audio controls src=""></audio></td>
-          <td><audio controls src=""></audio></td>
-          <td><audio controls src=""></audio></td>
-        </tr>
-        <tr>
           <th>Model B</th>
-          <td><audio controls src=""></audio></td>
-          <td><audio controls src=""></audio></td>
-          <td><audio controls src=""></audio></td>
-          <td><audio controls src=""></audio></td>
-          <td><audio controls src=""></audio></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <!-- 句子2 音频表格（同上） -->
-    <h3 class="title is-5">Sentence 2</h3>
-    <!-- 复制上方结构 -->
-  </div>
-</section>
-
-<!-- Emotion Accuracy -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">2. Emotion Accuracy</h2>
-    <p>
-      <!-- 你可以在这里补充 Emotion Accuracy 的描述性文字 -->
-    </p>
-
-    <!-- 句子1 音频表格（5×5）-->
-    <h3 class="title is-5">Sentence 1</h3>
-    <table class="table is-bordered is-striped is-fullwidth has-text-centered">
-      <thead>
-        <tr>
-          <th>Model \ Emotion</th>
-          <th>Emotion 1</th>
-          <th>Emotion 2</th>
-          <th>Emotion 3</th>
-          <th>Emotion 4</th>
-          <th>Emotion 5</th>
         </tr>
       </thead>
       <tbody>
-        <tr><th>Model A</th><td><audio controls src=""></audio></td> ... </tr>
-        <tr><th>Model B</th> ... </tr>
-        <tr><th>Model C</th> ... </tr>
-        <tr><th>Model D</th> ... </tr>
-        <tr><th>Model E</th> ... </tr>
+        <tr>
+          <th>Emotion 1</th>
+          <td><audio controls src=""></audio></td>
+          <td><audio controls src=""></audio></td>
+        </tr>
+        <!-- Emotion 2~5 同样结构 -->
       </tbody>
     </table>
 
-    <!-- 句子2 音频表格（同上） -->
     <h3 class="title is-5">Sentence 2</h3>
-    <!-- 复制结构 -->
+    <!-- 同上结构 -->
   </div>
 </section>
 
-<!-- Emotional Expressiveness Through Emphasis -->
+<!-- Section 2: Emotion Accuracy -->
 <section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="title is-3">3. Improvement of Emotional Expressiveness Through Emphasis</h2>
-    <p>
-      <!-- 你可以在这里补充 Expressiveness 提升部分的描述性文字 -->
-    </p>
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-3">2. Emotion Accuracy</h2>
+    <p> <!-- 留空位置供描述 --> </p>
 
-    <!-- 10 个句子，每句1行4列，横坐标是模型 -->
     <h3 class="title is-5">Sentence 1</h3>
-    <table class="table is-bordered is-striped is-fullwidth has-text-centered">
+    <table class="table is-bordered is-fullwidth">
+      <thead>
+        <tr>
+          <th>Emotion \ Model</th>
+          <th>Model A</th>
+          <th>Model B</th>
+          <th>Model C</th>
+          <th>Model D</th>
+          <th>Model E</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Emotion 1</th>
+          <td><audio controls src=""></audio></td>
+          <td><audio controls src=""></audio></td>
+          <td><audio controls src=""></audio></td>
+          <td><audio controls src=""></audio></td>
+          <td><audio controls src=""></audio></td>
+        </tr>
+        <!-- Emotion 2~5 同样结构 -->
+      </tbody>
+    </table>
+
+    <h3 class="title is-5">Sentence 2</h3>
+    <!-- 同上结构 -->
+  </div>
+</section>
+
+<!-- Section 3: Improvement of Expressiveness -->
+<section class="section">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-3">3. Improvement of Emotional Expressiveness Through Emphasis</h2>
+    <p> <!-- 留空位置供描述 --> </p>
+
+    <!-- 示例：10个句子，每句一个 1x4 表格 -->
+    <h3 class="title is-5">Sentence 1</h3>
+    <table class="table is-bordered is-fullwidth">
       <thead>
         <tr>
           <th>Model A</th>
@@ -137,21 +122,15 @@
         </tr>
       </tbody>
     </table>
-
-    <!-- 复制9次，Sentence 2~10 -->
+    <!-- Repeat Sentence 2~10 if needed -->
   </div>
 </section>
 
-<!-- Footer 保留 -->
+<!-- Footer -->
 <footer class="footer">
   <div class="container has-text-centered">
     <p>
-      This page is built using the Academic Project Page Template,
-      adapted by <a href="https://nerfies.github.io" target="_blank">Nerfies</a> and 
-      <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">eliahuhorwitz</a>.
+      This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
     </p>
   </div>
 </footer>
-
-</body>
-</html>
