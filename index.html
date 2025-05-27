@@ -15,26 +15,18 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>EME-TTS DEMO</title>
   <link rel="icon" type="image/x-icon" href="static/images/logo4.76133485.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
   <style>
     body {
       font-size: 18px;
-    }
-    .section p,
-    .audio-section p,
-    .content p {
-      text-align: left;
     }
     .audio-section {
       width: 100%;
@@ -47,9 +39,14 @@
     }
     .table-wrapper table {
       width: max-content;
-      min-width: 100%;
       margin: 0 auto;
       text-align: center;
+    }
+    .section p,
+    .audio-section p,
+    .content p {
+      text-align: left;
+      margin-bottom: 1.5rem;
     }
     .table thead th,
     .table tbody td {
@@ -61,7 +58,6 @@
       width: 265px;
     }
   </style>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -133,23 +129,25 @@
     <p>We designed a more challenging subjective test, distinct from previous studies on emphasis control. Instead of rating the degree of emphasis at a predefined position, participants were asked to identify the emphasized words in 80 randomly shuffled speech samples. The results indicate that the emphasis produced by our proposed model was clearly perceivable across different emotions.</p>
 
     <h3 class="title is-5">Sentence 1: She is now choosing skirt to wear.</h3>
-    <table class="table is-bordered is-fullwidth is-centered">
-      <thead>
-        <tr>
-          <th>Emotion</th>
-          <th>Emphasized Word</th>
-          <th>EME-TTS w/o EPE</th>
-          <th>EME-TTS</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Neutral</td><td>choosing</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/SH_IY1_IH0_Z_N_0_8_6_10.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/SH_IY1_IH0_Z_N_0_8_6_10.wav"></audio></td></tr>
-        <tr><td>Angry</td><td>now</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/SH_IY1_IH0_Z_N_1_8_4_5.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/SH_IY1_IH0_Z_N_1_8_4_5.wav"></audio></td></tr>
-        <tr><td>Happy</td><td>choosing</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/SH_IY1_IH0_Z_N_2_8_6_10.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/SH_IY1_IH0_Z_N_2_8_6_10.wav"></audio></td></tr>
-        <tr><td>Sad</td><td>wear</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/SH_IY1_IH0_Z_N_3_8_17_19.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/SH_IY1_IH0_Z_N_3_8_17_19.wav"></audio></td></tr>
-        <tr><td>Surprise</td><td>skirt</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/SH_IY1_IH0_Z_N_4_8_11_14.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/SH_IY1_IH0_Z_N_4_8_11_14.wav"></audio></td></tr>
-      </tbody>
-    </table>
+    <div class="table-wrapper">
+      <table class="table is-bordered is-fullwidth is-centered">
+        <thead>
+          <tr>
+            <th>Emotion</th>
+            <th>Emphasized Word</th>
+            <th>EME-TTS w/o EPE</th>
+            <th>EME-TTS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Neutral</td><td>choosing</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/SH_IY1_IH0_Z_N_0_8_6_10.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/SH_IY1_IH0_Z_N_0_8_6_10.wav"></audio></td></tr>
+          <tr><td>Angry</td><td>now</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/SH_IY1_IH0_Z_N_1_8_4_5.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/SH_IY1_IH0_Z_N_1_8_4_5.wav"></audio></td></tr>
+          <tr><td>Happy</td><td>choosing</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/SH_IY1_IH0_Z_N_2_8_6_10.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/SH_IY1_IH0_Z_N_2_8_6_10.wav"></audio></td></tr>
+          <tr><td>Sad</td><td>wear</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/SH_IY1_IH0_Z_N_3_8_17_19.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/SH_IY1_IH0_Z_N_3_8_17_19.wav"></audio></td></tr>
+          <tr><td>Surprise</td><td>skirt</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/SH_IY1_IH0_Z_N_4_8_11_14.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/SH_IY1_IH0_Z_N_4_8_11_14.wav"></audio></td></tr>
+        </tbody>
+      </table>
+    </div>
 
     <h3 class="title is-5">Sentence 2: Must a name mean something?</h3>
     <table class="table is-bordered is-fullwidth is-centered">
