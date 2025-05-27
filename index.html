@@ -39,7 +39,7 @@
     }
     .table-wrapper table {
       width: max-content;
-      min-width: 100%;
+      margin: 0 auto;
       text-align: center;
     }
     .section p,
@@ -177,26 +177,27 @@
     <p>To ensure fairness, all CosyVoice2-generated samples were conditioned on a neutral reference speaker’s audio and a textual emotion prompt, ensuring that only the speaker's identity and emotion labels were provided as input. During inference, our proposed model consistently utilized a large language model to predict suitable emphasis positions, which were then used as input for testing. Results demonstrate that EME-TTS achieves higher emotion accuracy in synthesized speech compared to baseline models, highlighting its overall effectiveness in generating emotionally expressive speech.</p>
 
     <h3 class="title is-5">Sentence 1: I chose the right way.</h3>
-    <table class="table is-bordered is-fullwidth is-centered">
-      <thead>
-        <tr>
-          <th>Emotion</th>
-          <th>Emphasized Word</th>
-          <th>CosyVoice2</th>
-          <th>EmoSpeech</th>
-          <th>EME-TTS w/o EPE</th>
-          <th>EME-TTS</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Neutral</td><td>right</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_10.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_41_0.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/AY1_CH_OW1_Z_DH_0_8_6_8.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/AY1_CH_OW1_Z_DH_0_8_6_8.wav"></audio></td></tr>
-        <tr><td>Angry</td><td>right</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_11.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_41_1.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/AY1_CH_OW1_Z_DH_1_8_6_8.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/AY1_CH_OW1_Z_DH_1_8_6_8.wav"></audio></td></tr>
-        <tr><td>Happy</td><td>right</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_12.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_41_2.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/AY1_CH_OW1_Z_DH_2_8_6_8.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/AY1_CH_OW1_Z_DH_2_8_6_8.wav"></audio></td></tr>
-        <tr><td>Sad</td><td>way</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_13.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_41_3.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/AY1_CH_OW1_Z_DH_3_8_9_10.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/AY1_CH_OW1_Z_DH_3_8_9_10.wav"></audio></td></tr>
-        <tr><td>Surprise</td><td>chose</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_14.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_41_4.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/AY1_CH_OW1_Z_DH_4_8_1_3.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/AY1_CH_OW1_Z_DH_4_8_1_3.wav"></audio></td></tr>
-      </tbody>
-    </table>
-
+    <div class="table-wrapper">
+      <table class="table is-bordered is-fullwidth is-centered">
+        <thead>
+          <tr>
+            <th>Emotion</th>
+            <th>Emphasized Word</th>
+            <th>CosyVoice2</th>
+            <th>EmoSpeech</th>
+            <th>EME-TTS w/o EPE</th>
+            <th>EME-TTS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Neutral</td><td>right</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_10.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_41_0.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/AY1_CH_OW1_Z_DH_0_8_6_8.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/AY1_CH_OW1_Z_DH_0_8_6_8.wav"></audio></td></tr>
+          <tr><td>Angry</td><td>right</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_11.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_41_1.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/AY1_CH_OW1_Z_DH_1_8_6_8.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/AY1_CH_OW1_Z_DH_1_8_6_8.wav"></audio></td></tr>
+          <tr><td>Happy</td><td>right</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_12.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_41_2.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/AY1_CH_OW1_Z_DH_2_8_6_8.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/AY1_CH_OW1_Z_DH_2_8_6_8.wav"></audio></td></tr>
+          <tr><td>Sad</td><td>way</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_13.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_41_3.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/AY1_CH_OW1_Z_DH_3_8_9_10.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/AY1_CH_OW1_Z_DH_3_8_9_10.wav"></audio></td></tr>
+          <tr><td>Surprise</td><td>chose</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_14.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_41_4.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/AY1_CH_OW1_Z_DH_4_8_1_3.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/AY1_CH_OW1_Z_DH_4_8_1_3.wav"></audio></td></tr>
+        </tbody>
+      </table>
+    </div>
     <h3 class="title is-5">Sentence 2: Rabbit gave dog a hurrying up sort of nudge.</h3>
     <table class="table is-bordered is-fullwidth is-centered">
       <thead>
