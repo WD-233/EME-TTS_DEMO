@@ -17,7 +17,7 @@
   <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Academic Project Page</title>
+  <title>EME-TTS DEMO</title>
   <!--<link rel="icon" type="image/x-icon" href="static/images/favicon.ico">-->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -70,15 +70,16 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Academic Project Page</h1>
+          <h1 class="title is-1 publication-title">EME-TTS: Unlocking the Emphasis and Emotion Link in Speech Synthesis</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><a href="#">First Author</a><sup>*</sup>,</span>
-            <span class="author-block"><a href="#">Second Author</a><sup>*</sup>,</span>
-            <span class="author-block"><a href="#">Third Author</a></span>
+            <span class="author-block"><a href="#">Haoxun Li</a></span>
+            <span class="author-block"><a href="#">Leyuan Qu</a><sup>*</sup>,</span>
+            <span class="author-block"><a href="#">Jiaxi Hu</a></span>
+            <span class="author-block"><a href="#">Taihao Li</a></span>
           </div>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Institution Name<br>Conference name and year</span>
-            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+            <span class="author-block">Hangzhou Institute for Advanced Study, University of Chinese Academy of Sciences, China<br>Accepted to INTERSPEECH 2025</span>
+            <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding author</small></span>
           </div>
           <div class="publication-links">
             <span class="link-block">
@@ -110,7 +111,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet.
+            In recent years, emotional Text-to-Speech (TTS) synthesis and emphasis-controllable speech synthesis have advanced significantly. However, their interaction remains underexplored. We propose Emphasis Meets Emotion TTS (EME-TTS), a novel framework designed to address two key research questions: (1) how to effectively utilize emphasis to enhance the expressiveness of emotional speech, and (2) how to maintain the perceptual clarity and stability of target emphasis across different emotions. EME-TTS employs weakly supervised learning with emphasis pseudo-labels and variance-based emphasis features. Additionally, the proposed Emphasis Perception Enhancement (EPE) block enhances the interaction between emotional signals and emphasis positions. Experimental results show that EME-TTS, when combined with large language models for emphasis position prediction, enables more natural emotional speech synthesis while preserving stable and distinguishable target emphasis across emotions.
           </p>
         </div>
       </div>
@@ -122,28 +123,28 @@
 <section class="section">
   <div class="audio-section container is-max-desktop has-text-centered">
     <h2 class="title is-3">1. Emphasis Accuracy</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet.</p>
+    <p>We designed a more challenging subjective test, distinct from previous studies on emphasis control. Instead of rating the degree of emphasis at a predefined position, participants were asked to identify the emphasized words in 80 randomly shuffled speech samples. The results indicate that the emphasis produced by our proposed model was clearly perceivable across different emotions.</p>
 
-    <h3 class="title is-5">Sentence 1</h3>
+    <h3 class="title is-5">Sentence 1: She is now choosing skirt to wear.</h3>
     <table class="table is-bordered is-fullwidth is-centered">
       <thead>
         <tr>
           <th>Emotion</th>
           <th>Emphasized Word</th>
-          <th>Model A</th>
-          <th>Model B</th>
+          <th>EME-TTS w/o EPE</th>
+          <th>EME-TTS</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Neutral</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Angry</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Happy</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Sad</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Surprise</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
+        <tr><td>Neutral</td><td>choosing</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/SH_IY1_IH0_Z_N_0_8_6_10.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/SH_IY1_IH0_Z_N_0_8_6_10.wav"></audio></td></tr>
+        <tr><td>Angry</td><td>now</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/SH_IY1_IH0_Z_N_1_8_4_5.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/SH_IY1_IH0_Z_N_1_8_4_5.wav"></audio></td></tr>
+        <tr><td>Happy</td><td>choosing</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/SH_IY1_IH0_Z_N_2_8_6_10.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/SH_IY1_IH0_Z_N_2_8_6_10.wav"></audio></td></tr>
+        <tr><td>Sad</td><td>wear</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/SH_IY1_IH0_Z_N_3_8_17_19.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/SH_IY1_IH0_Z_N_3_8_17_19.wav"></audio></td></tr>
+        <tr><td>Surprise</td><td>skirt</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/SH_IY1_IH0_Z_N_4_8_11_14.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/SH_IY1_IH0_Z_N_4_8_11_14.wav"></audio></td></tr>
       </tbody>
     </table>
 
-    <h3 class="title is-5">Sentence 2</h3>
+    <h3 class="title is-5">Sentence 2: Must a name mean something?</h3>
     <table class="table is-bordered is-fullwidth is-centered">
       <thead>
         <tr>
@@ -154,11 +155,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td>Neutral</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Angry</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Happy</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Sad</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Surprise</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
+        <tr><td>Neutral</td><td>mean</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/M_AH1_S_T_AH0_0_8_8_10.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/M_AH1_S_T_AH0_0_8_8_10.wav"></audio></td></tr>
+        <tr><td>Angry</td><td>must</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/M_AH1_S_T_AH0_1_8_0_3.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/M_AH1_S_T_AH0_1_8_0_3.wav"></audio></td></tr>
+        <tr><td>Happy</td><td>name</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/M_AH1_S_T_AH0_2_8_5_7.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/M_AH1_S_T_AH0_2_8_5_7.wav"></audio></td></tr>
+        <tr><td>Sad</td><td>mean</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/M_AH1_S_T_AH0_3_8_8_10.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/M_AH1_S_T_AH0_3_8_8_10.wav"></audio></td></tr>
+        <tr><td>Surprise</td><td>something</td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/M_AH1_S_T_AH0_4_8_11_16.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/M_AH1_S_T_AH0_4_8_11_16.wav"></audio></td></tr>
       </tbody>
     </table>
   </div>
