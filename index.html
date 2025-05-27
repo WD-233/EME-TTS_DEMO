@@ -72,9 +72,9 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">EME-TTS: Unlocking the Emphasis and Emotion Link in Speech Synthesis</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><a href="#">Haoxun Li</a></span>
+            <span class="author-block"><a href="#">Haoxun Li,</a></span>
             <span class="author-block"><a href="#">Leyuan Qu</a><sup>*</sup>,</span>
-            <span class="author-block"><a href="#">Jiaxi Hu</a></span>
+            <span class="author-block"><a href="#">Jiaxi Hu,</a></span>
             <span class="author-block"><a href="#">Taihao Li</a></span>
           </div>
           <div class="is-size-5 publication-authors">
@@ -150,8 +150,8 @@
         <tr>
           <th>Emotion</th>
           <th>Emphasized Word</th>
-          <th>Model A</th>
-          <th>Model B</th>
+          <th>EME-TTS w/o EPE</th>
+          <th>EME-TTS</th>
         </tr>
       </thead>
       <tbody>
@@ -169,47 +169,47 @@
 <section class="section">
   <div class="audio-section container is-max-desktop has-text-centered">
     <h2 class="title is-3">2. Emotion Accuracy</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet.</p>
+    <p>To ensure fairness, all CosyVoice2-generated samples were conditioned on a neutral reference speaker’s audio and a textual emotion prompt, ensuring that only the speaker's identity and emotion labels were provided as input. During inference, our proposed model consistently utilized a large language model to predict suitable emphasis positions, which were then used as input for testing. Results demonstrate that EME-TTS achieves higher emotion accuracy in synthesized speech compared to baseline models, highlighting its overall effectiveness in generating emotionally expressive speech.</p>
 
-    <h3 class="title is-5">Sentence 1</h3>
+    <h3 class="title is-5">Sentence 1: I chose the right way.</h3>
     <table class="table is-bordered is-fullwidth is-centered">
       <thead>
         <tr>
           <th>Emotion</th>
           <th>Emphasized Word</th>
-          <th>Model A</th>
-          <th>Model B</th>
-          <th>Model C</th>
-          <th>Model D</th>
+          <th>CosyVoice2</th>
+          <th>EmoSpeech</th>
+          <th>EME-TTS w/o EPE</th>
+          <th>EME-TTS</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Neutral</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Angry</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Happy</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Sad</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Surprise</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
+        <tr><td>Neutral</td><td>right</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_10.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_41_0.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/AY1_CH_OW1_Z_DH_0_8_6_8.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/AY1_CH_OW1_Z_DH_0_8_6_8.wav"></audio></td></tr>
+        <tr><td>Angry</td><td>right</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_11.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_41_1.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/AY1_CH_OW1_Z_DH_1_8_6_8.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/AY1_CH_OW1_Z_DH_1_8_6_8.wav"></audio></td></tr>
+        <tr><td>Happy</td><td>right</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_12.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_41_2.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/AY1_CH_OW1_Z_DH_2_8_6_8.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/AY1_CH_OW1_Z_DH_2_8_6_8.wav"></audio></td></tr>
+        <tr><td>Sad</td><td>way</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_13.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_41_3.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/AY1_CH_OW1_Z_DH_3_8_9_10.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/AY1_CH_OW1_Z_DH_3_8_9_10.wav"></audio></td></tr>
+        <tr><td>Surprise</td><td>chose</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_14.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_41_4.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/AY1_CH_OW1_Z_DH_4_8_1_3.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/AY1_CH_OW1_Z_DH_4_8_1_3.wav"></audio></td></tr>
       </tbody>
     </table>
 
-    <h3 class="title is-5">Sentence 2</h3>
+    <h3 class="title is-5">Sentence 2: Rabbit gave dog a hurrying up sort of nudge.</h3>
     <table class="table is-bordered is-fullwidth is-centered">
       <thead>
         <tr>
           <th>Emotion</th>
           <th>Emphasized Word</th>
-          <th>Model A</th>
-          <th>Model B</th>
-          <th>Model C</th>
-          <th>Model D</th>
+          <th>CosyVoice2</th>
+          <th>EmoSpeech</th>
+          <th>EME-TTS w/o EPE</th>
+          <th>EME-TTS</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Neutral</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Angry</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Happy</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Sad</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td></tr>
-        <tr><td>Surprise</td><td>xxx</td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/5_IH1_T_L_UH1_K_3_8_37_41.wav"></audio></td><td><audio controls src="static/shortpassage/EME-TTS/3_AH0_F_OW1_L_D_0_8_18_22.wav"></audio></td></tr>
+        <tr><td>Neutral</td><td>gave</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_15.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_50_0.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/R_AE1_B_AH0_T_0_8_5_7.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/R_AE1_B_AH0_T_0_8_5_7.wav"></audio></td></tr>
+        <tr><td>Angry</td><td>hurrying</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_16.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_50_1.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/R_AE1_B_AH0_T_1_8_12_16.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/R_AE1_B_AH0_T_1_8_12_16.wav"></audio></td></tr>
+        <tr><td>Happy</td><td>nudge</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_17.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_50_2.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/R_AE1_B_AH0_T_2_8_25_27.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/R_AE1_B_AH0_T_2_8_25_27.wav"></audio></td></tr>
+        <tr><td>Sad</td><td>nudge</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_18.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_50_3.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/R_AE1_B_AH0_T_3_8_25_27.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/R_AE1_B_AH0_T_3_8_25_27.wav"></audio></td></tr>
+        <tr><td>Surprise</td><td>hurrying</td><td><audio controls src="static/some_test_audio/cosyvoice2/instruct_19.wav"></audio></td><td><audio controls src="static/some_test_audio/emospeech/8_50_4.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS without EPE/R_AE1_B_AH0_T_4_8_12_16.wav"></audio></td><td><audio controls src="static/some_test_audio/EME-TTS/R_AE1_B_AH0_T_4_8_12_16.wav"></audio></td></tr>
       </tbody>
     </table>
   </div>
