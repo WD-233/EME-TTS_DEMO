@@ -9,7 +9,6 @@
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
@@ -29,20 +28,28 @@
   <link rel="stylesheet" href="static/css/index.css">
 
   <style>
+    body {
+      font-size: 18px;
+    }
+    .section p,
+    .audio-section p,
+    .content p {
+      text-align: left;
+    }
     .audio-section {
       width: 100%;
-      overflow-x: auto;
       padding-bottom: 1rem;
     }
-    .audio-section .table {
+    .table-wrapper {
+      overflow-x: auto;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    .table-wrapper table {
       width: max-content;
       min-width: 100%;
-      margin: 0 auto 2rem auto;
+      margin: 0 auto;
       text-align: center;
-    }
-    .audio-section p,
-    .section p {
-      margin-bottom: 2rem;
     }
     .table thead th,
     .table tbody td {
